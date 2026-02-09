@@ -33,7 +33,17 @@ This app follows a **stateful Flutter architecture** with emphasis on:
 
 ### Architecture Diagram
 
-![BLE App Architecture](assets/ble_app_architecture.png)
+[BLE Device] ---> [FlutterBluePlus] ---> [BLEScanner / SerialDataPage] ---> [TTLFileCache CSV]
+                        |
+                        v
+                  [UI Update & Alarm]
+                        |
+                        v
+                 [Map + GPS Integration]
+                        |
+                        v
+                 [Pending Files UI]
+
 
 The diagram illustrates the data flow:
 
