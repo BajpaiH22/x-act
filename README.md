@@ -133,8 +133,9 @@ The diagram illustrates the data flow:
 
 ## Maps & GPS Integration
 
+* Library: flutter_map + latlong2
 * Live tracking using `Geolocator.getPositionStream()`.
-* Map markers for current GPS location and custom markers via map tap.
+* Map markers for current Phone location marker i.e. GPS location and custom markers via map tap.
 * Map auto-centers and zooms on GPS updates.
 
 ## Alarm System
@@ -148,7 +149,11 @@ The diagram illustrates the data flow:
 
 * Lists all active CSV files in TTLFileCache.
 * Shows metadata: size, record count, last modified.
-* Actions: Preview, Share, Delete, Purge expired.
+* Actions:
+  * Preview (DataTable view)
+  * Share (via share_plus)
+  * Delete local copy
+  * Purge expired files
 
 ## Extending / Modifying the App
 
